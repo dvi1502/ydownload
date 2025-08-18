@@ -1,3 +1,4 @@
+yt-dlp==2025.8.11
 setuptools==80.9.0
 wheel==0.45.1
-yt-dlp==2025.8.11
+
