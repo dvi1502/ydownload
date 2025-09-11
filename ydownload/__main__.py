@@ -36,7 +36,11 @@ def download_youtube_video_yt_dlp(url, output_path='downloads'):
         print(f"An error occurred: {e}")
 
 
-def clean(directory_path, extension="wav"):
+def clean_folder(directory_path, extension="wav"):
+    """
+    Очищает папку от ненужных файлов
+    """
+    print("\n")
     for filename in os.listdir(directory_path):
         if filename.endswith(extension):
             file_path = os.path.join(directory_path, filename)
@@ -62,4 +66,4 @@ if __name__ == "__main__":
 
     download_youtube_video_yt_dlp(args.url, args.out)
 
-    clean(args.out)
+    clean_folder(args.out)
